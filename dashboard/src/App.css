@@ -1,0 +1,33 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  flex: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.dashboard-grid {
+  display: flex;
+  gap: 32px;
+}
+
+.top-grid > :first-child { flex: 3; }
+.top-grid > :last-child { flex: 2; }
+
+.bottom-grid > :first-child { flex: 3; }
+.bottom-grid > :last-child { flex: 2; }
+
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    flex-direction: column;
+  }
+}

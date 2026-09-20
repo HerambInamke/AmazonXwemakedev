@@ -1,0 +1,47 @@
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F6F8;
+  --text-main: #111318;
+  --primary-blue: #1D4ED8;
+  
+  --color-gfs: #64748B;
+  --color-ecmwf: #0D9488;
+  --color-graphcast: #4F46E5;
+  --color-blended: #1D4ED8;
+  
+  --color-watch: #D97706;
+  --color-warning: #EA580C;
+  --color-severe: #DC2626;
+  --color-success: #16A34A;
+
+  --border-color: #E5E7EB;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-secondary);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}

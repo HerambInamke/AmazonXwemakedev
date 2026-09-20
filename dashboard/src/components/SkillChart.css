@@ -1,0 +1,41 @@
+.skill-chart-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skill-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.skill-badge {
+  background: #DCFCE7;
+  color: var(--color-success);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skill-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-main);
+  outline: none;
+}
+
+.chart-container {
+  width: 100%;
+}

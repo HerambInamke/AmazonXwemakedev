@@ -1,0 +1,79 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-icon {
+  color: var(--primary-blue);
+}
+
+.topbar-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.topbar-center {
+  display: flex;
+  background: var(--bg-secondary);
+  padding: 4px;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+.region-tab {
+  background: transparent;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: all 0.2s;
+}
+
+.region-tab.active {
+  background: var(--primary-blue);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.last-updated {
+  font-size: 14px;
+  color: #64748B;
+}
+
+.run-pipeline-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.run-pipeline-btn:hover {
+  background: #1e40af;
+}

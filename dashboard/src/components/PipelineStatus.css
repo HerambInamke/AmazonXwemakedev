@@ -1,0 +1,80 @@
+.pipeline-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pipeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.running-badge {
+  background: #EFF6FF;
+  color: var(--primary-blue);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  animation: pulse-blue 2s infinite;
+}
+
+.success-badge {
+  background: #DCFCE7;
+  color: var(--color-success);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-done { color: var(--color-success); }
+.icon-running { color: var(--primary-blue); }
+.icon-pending { color: #CBD5E1; }
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.step.pending .step-label {
+  color: #94A3B8;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-blue {
+  0% { box-shadow: 0 0 0 0 rgba(29, 78, 216, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(29, 78, 216, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(29, 78, 216, 0); }
+}
